@@ -1,0 +1,14 @@
+[
+  {
+    "name": "Dog Blog",
+    "description": "A blog about dogs."
+  },
+  {
+    "name": "Cat Blog",
+    "description": "A blog about cats."
+  },
+  {
+    "name": "Fitness Blog",
+    "description": "A blog about fitness."
+  }
+]

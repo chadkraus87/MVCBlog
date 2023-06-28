@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Storm",
+    "email": "storm@marvel.com",
+    "password": "Storm12345"
+  },
+  {
+    "name": "Doctor Strange",
+    "email": "drstrange@marvel.com",
+    "password": "Strange12345"
+  },
+  {
+    "name": "Hulk",
+    "email": "hulk@marvel.com",
+    "password": "Hulk12345"
+  }
+]
