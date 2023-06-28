@@ -1,0 +1,28 @@
+{{!-- Include the main layout --}}
+{{> main}}
+
+{{!-- Set the page title --}}
+{{#settitle}}Dashboard{{/settitle}}
+
+{{!-- Begin the content --}}
+{{#content "main"}}
+  <h1>Welcome, {{user.name}}!</h1>
+  
+  {{!-- Check if the user has blogs --}}
+  {{#if blogs.length}}
+    <h2>Your Blogs:</h2>
+    <div class="blog-list">
+      {{!-- Iterate over the user's blogs --}}
+      {{#each blogs}}
+        <div class="blog-item">
+          <h3>{{title}}</h3>
+          <p>{{format_date created_at}}</p>
+          <p>{{content}}</p>
+          <a href="/blogs/{{id}}" class="btn">View Blog</a>
+        </div>
+      {{/each}}
+    </div>
+  {{else}}
+    <p>You have not created any blogs yet.</p>
+  {{/if}}
+{{/content}}

@@ -1,0 +1,22 @@
+{{!-- Include the main layout --}}
+{{> main}}
+
+{{!-- Set the page title --}}
+{{#settitle}}Login{{/settitle}}
+
+{{!-- Begin the content --}}
+{{#content "main"}}
+  <h1>Login</h1>
+
+  <form class="login-form">
+    <div class="form-group">
+      <label for="email-login">Email:</label>
+      <input type="email" id="email-login" required>
+    </div>
+    <div class="form-group">
+      <label for="password-login">Password:</label>
+      <input type="password" id="password-login" required>
+    </div>
+    <button type="submit" class="btn">Login</button>
+  </form>
+{{/content}}

@@ -1,14 +1,17 @@
 [
   {
-    "name": "Dog Blog",
-    "description": "A blog about dogs."
+    "title": "Dog Blog",
+    "description": "A blog about dogs.",
+    "user_id": 1
   },
   {
-    "name": "Cat Blog",
-    "description": "A blog about cats."
+    "title": "Cat Blog",
+    "description": "A blog about cats.",
+    "user_id": 2
   },
   {
-    "name": "Fitness Blog",
-    "description": "A blog about fitness."
+    "title": "Fitness Blog",
+    "description": "A blog about fitness.",
+    "user_id": 3
   }
 ]

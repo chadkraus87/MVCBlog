@@ -1,0 +1,26 @@
+{{!-- Include the main layout --}}
+{{> main}}
+
+{{!-- Set the page title --}}
+{{#settitle}}Sign Up{{/settitle}}
+
+{{!-- Begin the content --}}
+{{#content "main"}}
+  <h1>Sign Up</h1>
+
+  <form class="signup-form">
+    <div class="form-group">
+      <label for="name-signup">Name:</label>
+      <input type="text" id="name-signup" required>
+    </div>
+    <div class="form-group">
+      <label for="email-signup">Email:</label>
+      <input type="email" id="email-signup" required>
+    </div>
+    <div class="form-group">
+      <label for="password-signup">Password:</label>
+      <input type="password" id="password-signup" required>
+    </div>
+    <button type="submit" class="btn">Sign Up</button>
+  </form>
+{{/content}}
