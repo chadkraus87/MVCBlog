@@ -114,7 +114,7 @@ body {
     text-align: center;
   }
   
-  /* Responsive styles */
+  /* Media Queries */
   @media (max-width: 768px) {
     header {
       padding: 10px;
