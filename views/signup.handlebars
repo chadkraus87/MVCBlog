@@ -1,26 +1,19 @@
-{{!-- Include the main layout --}}
-{{> main}}
+ <main class="form-signin text-center">
+  <form id="signup-form">
+    <h1 class="h3 mb-3 fw-normal">Sign Up Now</h1>
 
-{{!-- Set the page title --}}
-{{#settitle}}Sign Up{{/settitle}}
+    <div class="form-floating mb-3">
+      <input type="text" class="form-control" id="username-signup" placeholder="Username" autofocus="true">
+      <label for="username-signup">Username</label>
+    </div>
+    <div class="form-floating mb-3">
+      <input type="password" class="form-control" id="password-signup" placeholder="Password" autofocus="true">
+      <label for="password-signup">Password</label>
+    </div>
 
-{{!-- Begin the content --}}
-{{#content "main"}}
-  <h1>Sign Up</h1>
-
-  <form class="signup-form">
-    <div class="form-group">
-      <label for="name-signup">Name:</label>
-      <input type="text" id="name-signup" required>
-    </div>
-    <div class="form-group">
-      <label for="email-signup">Email:</label>
-      <input type="email" id="email-signup" required>
-    </div>
-    <div class="form-group">
-      <label for="password-signup">Password:</label>
-      <input type="password" id="password-signup" required>
-    </div>
-    <button type="submit" class="btn">Sign Up</button>
+    <button class="w-100 btn btn-lg btn-info mb-3" type="submit">Sign Up</button>
+    <a class="login-link" href="/login">Login</a>
   </form>
-{{/content}}
+</main>
+
+<script src="/js/signup.js"></script>

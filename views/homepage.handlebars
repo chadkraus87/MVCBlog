@@ -1,28 +1,7 @@
-{{!-- Include the main layout --}}
-{{> main}}
+<article class="post">
 
-{{!-- Set the page title --}}
-{{#settitle}}Homepage{{/settitle}}
+    {{#each posts as |post| }}
+        {{> post-info post}}
+    {{/each}}
 
-{{!-- Begin the content --}}
-{{#content "main"}}
-  <h1>Welcome to the Tech Blog!</h1>
-  
-  {{!-- Check if there are blogs --}}
-  {{#if blogs.length}}
-    <h2>Recent Blogs:</h2>
-    <div class="blog-list">
-      {{!-- Iterate over the blogs --}}
-      {{#each blogs}}
-        <div class="blog-item">
-          <h3>{{title}}</h3>
-          <p>{{format_date created_at}}</p>
-          <p>{{content}}</p>
-          <a href="/blogs/{{id}}" class="btn">Read More</a>
-        </div>
-      {{/each}}
-    </div>
-  {{else}}
-    <p>There are no blogs yet.</p>
-  {{/if}}
-{{/content}}
+</article>
