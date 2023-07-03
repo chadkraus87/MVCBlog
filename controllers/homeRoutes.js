@@ -8,14 +8,14 @@ router.get('/', async (req, res) => {
       include: [
         {
           model: User,
-          attributes: ['name'],
+          attributes: ['email'],
         },
         {
           model: Comment,
           attributes: ['id', 'comment_text', 'user_id', 'blog_id', 'created_at'],
           include: {
             model: User,
-            attributes: ['name'],
+            attributes: ['email'],
           },
         },
       ],
@@ -38,14 +38,14 @@ router.get('/blog/:id', async (req, res) => {
       include: [
         {
           model: User,
-          attributes: ['name'],
+          attributes: ['email'],
         },
         {
           model: Comment,
           attributes: ['id', 'comment_text', 'user_id', 'blog_id', 'created_at'],
           include: {
             model: User,
-            attributes: ['name'],
+            attributes: ['email'],
           },
         },
       ],

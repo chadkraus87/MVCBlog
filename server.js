@@ -11,7 +11,6 @@ const SequelizeStore = require('connect-session-sequelize')(session.Store);
 const app = express();
 const PORT = process.env.PORT || 3001;
 
-// Set up Handlebars.js engine with custom helpers
 const hbs = exphbs.create({
   helpers,
   layoutsDir: path.join(__dirname, 'views/layouts'),
@@ -42,6 +41,10 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(routes);
+
+app.get('/dashboard/new', (req, res) => {
+  res.render('add-post');
+});
 
 sequelize.sync({ force: false }).then(() => {
   app.listen(PORT, () => {
