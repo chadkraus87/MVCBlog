@@ -1,13 +1,13 @@
-{{#if posts.length}}
+{{#if blogs.length}}
 <section>
-  <h2>Recent Posts</h2>
-    {{#each posts as |post|}}
-      {{> dashboard-postdata post}}
+  <h2>Recent Blogs</h2>
+  <div class="post-container">
+    {{#each blogs}}
+      {{> postdata}}
+      {{blogs.content}}
     {{/each}}
+  </div>
 </section>
 {{/if}}
 
-<button type="submit" class="btn"><a class="link" href="/dashboard/new">Add Post</a></button>
-
-<script src="/js/new.js"></script>
-
+<a class="link btn" href="/dashboard/new">Add Post</a>

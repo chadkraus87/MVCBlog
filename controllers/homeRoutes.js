@@ -52,9 +52,10 @@ router.get('/blog/:id', async (req, res) => {
     });
 
     const blog = blogData.get({ plain: true });
-
+    console.log(blog);
     res.render('single-post', {
       ...blog,
+      blog,
       logged_in: req.session.logged_in,
     });
   } catch (err) {
@@ -71,7 +72,7 @@ router.get('/dashboard', withAuth, async (req, res) => {
     });
 
     const user = userData.get({ plain: true });
-
+    console.log(user);
     res.render('dashboard', {
       ...user,
       logged_in: true,
