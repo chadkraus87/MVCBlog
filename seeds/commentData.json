@@ -1,7 +1,8 @@
 [
 	{
 		"blog_id": 1,
-		"comment_description": "My first comment!",
+		"comment_text": "What a great blog!",
+		"user_email": "jeangrey@marvel.com",
 		"user_id": 1
 	}
 ]
