@@ -21,12 +21,3 @@ const newFormHandler = async (event) => {
 };
 
 document.querySelector('#add-post-form').addEventListener('submit', newFormHandler);
-
-// const appendPostToDashboard = (post) => {
-//   const postTemplate = `
-//   {{> single-post post}}
-//   `;
-
-//   const postContainer = document.querySelector('.post-container');
-//   postContainer.insertAdjacentHTML('beforeend', postTemplate);
-// };
