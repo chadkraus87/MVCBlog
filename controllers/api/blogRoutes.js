@@ -13,7 +13,6 @@ router.post('/', withAuth, async (req, res) => {
       user_id: req.session.user_id,
     });
 
-    // Fetch the newly created post with associated user information
     const blogData = await Blog.findOne({
       where: { id: newBlog.id },
       include: { all: true, nested: true },
