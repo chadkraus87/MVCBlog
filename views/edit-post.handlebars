@@ -1,21 +1,17 @@
 <div class="card">
     <h3 class="card-header">Edit Post</h3>
-    <form class="card-body edit-post-form" id="edit-post-form">
+    <form class="card-body edit-form" id="edit-form">
         <div class="form-floating mb-3">
-        <label for="post-title" class="form-label">Title</label>
-        <input name="post-title" type="text" placeholder="{{post.title}}" class="form-input w-100" />
+        <input id="edit-title" name="post-title" type="text" value="{{blog.title}}" class="form-input w-100" />
         </div>
 
         <div class="form-floating mb-3">
-        <label class="form-label" for="content">Body</label>
-        <textarea name="content" type="text" placeholder="{{post.body}}" class="form-input w-100" style="height: 100px"/></textarea>
+        <textarea id="edit-content" name="content" type="text" class="form-input w-100" style="height: 100px"/>{{blog.body}}</textarea>
         </div>
 
-        <button type="submit" class="w-100 btn btn-lg btn-info mb-3">Edit Post</button>
-        <button type="button" class="delete-post-btn w-100 btn btn-lg btn-danger mb-3">Delete Post</button>
+        <button id="edit-id" data-id="{{blog.id}}" type="submit" class="w-100 btn btn-lg btn-info mb-3">Edit Blog</button>
     </form>
 </div>
 
 
-<script src="/js/edit-post.js"></script>
-<script src="/js/delete-post.js"></script>
+<script src="/js/edit.js"></script>

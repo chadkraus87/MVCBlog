@@ -1,0 +1,1 @@
+// trigger a delete api blog route
