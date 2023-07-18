@@ -2,16 +2,16 @@
     <h3 class="card-header">Edit Post</h3>
     <form class="card-body edit-form" id="edit-form">
         <div class="form-floating mb-3">
-        <input id="edit-title" name="post-title" type="text" value="{{blog.title}}" class="form-input w-100" />
+            <input id="edit-title" name="post-title" type="text" value="{{blog.title}}" class="form-input w-100" />
         </div>
 
         <div class="form-floating mb-3">
-        <textarea id="edit-content" name="content" type="text" class="form-input w-100" style="height: 100px"/>{{blog.body}}</textarea>
+            <textarea id="edit-content" name="content" type="text" class="form-input w-100"
+                style="height: 100px">{{blog.body}}</textarea>
         </div>
 
         <button id="edit-id" data-id="{{blog.id}}" type="submit" class="w-100 btn btn-lg btn-info mb-3">Edit Blog</button>
     </form>
 </div>
-
 
 <script src="/js/edit.js"></script>

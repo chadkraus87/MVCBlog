@@ -5,13 +5,13 @@ const editFormHandler = async (event) => {
     const body = document.querySelector('#edit-content').value.trim();
     const id = document.querySelector('#edit-id').dataset.id;
   
-    if (title && content && id) {
+    if (title && body && id) {
       const response = await fetch(`/api/blogs/${id}`, {
         method: 'PUT',
         body: JSON.stringify({ title, body }),
         headers: { 'Content-Type': 'application/json' },
       });
-  
+      console.log(response);
       if (response.ok) {
         document.location.replace('/dashboard');
       } else {

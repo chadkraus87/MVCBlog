@@ -6,6 +6,6 @@
     <div class="card-body">
         <p class="card-text">{{body}}</p>
         <a class="text-info" href="/edit/{{id}}">Edit Blog</a>
-        <button type="button" class="delete-post-btn w-100 btn btn-lg btn-danger mb-3">Delete Blog</button>
+        <button onclick="deleteFormHandler(event)" class="text-info" data-id="{{id}}">Delete Blog</button>
     </div>
 </div>
